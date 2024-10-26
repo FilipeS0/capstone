@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Libre+Baskerville&display=swap');
+
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+header { 
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #6A994E;
+}
+
+header div.logo {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  flex-basis: 200px;
+}
+
+header > div > img {
+  display: inline-block;
+}
+
+header > div > p {
+  font-family: "Inknut Antiqua";
+}
+
+header div.search {
+  display: flex;
+  flex: 0 1 250px;
+
+  align-items: center;
+  background-color: #A7C957;
+  border: 3px solid #3866417b;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+header div.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+}
+
+header div.search button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header > nav {
+  margin-right: 20px;
+  display: flex;
+}
+
+header nav ul {
+  font-size: 1.2rem;
+
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1, .nothing {
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  background-color: #A7C957;
+  margin: auto;
+  padding: 12px;
+  max-width: 600px;
+
+  display: flex;
+  flex: 1 0 600px;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+
+main article {
+  border: 2px solid #3866417b;
+  padding: 10px;
+  background-color: #F2E8CF;
+}
+
+main article h2 {
+  display: inline-block;
+  padding-bottom: 7px;
+  max-width: 435px;
+}
+
+main article p {
+  max-width: 435px;
+}
+
+main article data {
+  float: right;
+  color: rgba(0, 0, 0, 0.549);
+  font-size: .8rem;
+}
+
+form.new {
+  margin: auto;
+  padding: 12px;
+  max-width: 600px;
+  border: 2px solid #3866417b;
+  padding: 10px;
+  background-color: #F2E8CF;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+form.new input {
+  width: 100px;
+}
+
+textarea {
+  width: 250px;
+  height: 35px;
+}
+
+.add, .up {
+  width: 90px;
+}
+
+.edit, .delete {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  font-size: 0.8rem;
+}

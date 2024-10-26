@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+  <form action="/add" method="post" class="new">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title">
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date">
+
+    <label for="text">Your text:</label>
+    <textarea name="content" id="content"></textarea>
+
+    <button type="submit" class="add">Add Article</button>  
+  </form>
+
+  <h1>Blog articles</h1>
+  <% if (articles.length > 0) { %>
+    <%- include("sections.ejs") %>
+  <% } else { %>
+    <p class="nothing">There is no post</p>
+  <% } %>
+    
+<%- include("partials/footer.ejs") %>

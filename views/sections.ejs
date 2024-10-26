@@ -1,0 +1,18 @@
+<main>
+  <% articles.forEach(function(article, index) { %>
+    <article>
+      <h2><%= article.title %></h2>
+      <data value="data"><%= article.date %></data>
+      <p><%= article.text %></p>
+
+      <form action="/edit/<%= index %>" class="edit">
+        <button type="submit">Edit</button>
+      </form>
+
+      <form action="/delete/<%= index %>" method="post" class="delete">
+        <button type="submit">Delete</button>
+      </form>
+
+    </article>
+  <% }); %>
+</main>
